@@ -17,7 +17,7 @@ object StreamingCheckPointDemo {
     def main(args: Array[String]): Unit = {
         val host = "localhost"
         val port: Int = 9999
-        val checkPointDir = "/Users/canhuamei/workspace/MY_GIT/spark-app-framework/src/test/cp"
+        val checkPointDir = "/Users/canhuamei/workspace/MY_GIT/spark-app-framework/target/cp"
         val output = "target/output/res1"
 
         val ssc = StreamingContext.getOrCreate(checkPointDir, () => createContext(host, port, checkPointDir))
